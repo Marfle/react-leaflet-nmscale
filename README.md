@@ -10,15 +10,19 @@ TBD
 
 ## Usage
 
-```jsx
+Import:
+```javascript
 import { Map, TileLayer } from "react-leaflet";
 import NmScale from "@marfle/react-leaflet-nmscale";
+```
 
+Use:
+```jsx
 <Map center={[0, 0]} zoom={10}>
   <TileLayer
     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
   <TileLayer
-    url={"https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png"}
+    url="https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png" />
   <NmScale />
 </Map>
 ```
@@ -31,4 +35,4 @@ See [LICENSE](LICENSE) file.
 
 ## About us
 
-Marfle makes software for workboat fleets
+[`Marfle`](https://www.marfle.com) makes software for workboat fleets

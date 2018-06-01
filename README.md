@@ -5,7 +5,7 @@ React nautical mile component for [`React-Leaflet`](https://github.com/PaulLeCam
 ## Install
 
 ```bash
-TBD
+npm install @marfle/react-leaflet-nmscale
 ```
 
 ## Usage
@@ -35,4 +35,4 @@ See [LICENSE](LICENSE) file.
 
 ## About us
 
-[`Marfle`](https://www.marfle.com) makes software for workboat fleets
+[Marfle](https://www.marfle.com) makes software for workboat fleets

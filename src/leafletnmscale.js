@@ -1,4 +1,5 @@
-//@flow
+// @flow
+// flowlint-next-line untyped-import:off
 import { Control, DomUtil } from "leaflet";
 
 const LeafletScaleControl = Control.Scale.extend({

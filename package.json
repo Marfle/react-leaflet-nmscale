@@ -1,6 +1,6 @@
 {
   "name": "@marfle/react-leaflet-nmscale",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Nautical mile scale for react-leaflet",
   "main": "dist/nmscale.js",
   "module": "dist/esm/nmscale.js",

@@ -13,7 +13,7 @@
     "flow": "flow check",
     "jest": "jest",
     "lint": "eslint src __tests__",
-    "test": "npm run lint && npm run jest && npm run flow",
+    "test": "npm run lint && npm run jest",
     "prepublishOnly": "npm run test && npm run build"
   },
   "repository": {
@@ -48,15 +48,15 @@
     "@babel/preset-flow": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.12.1",
-    "eslint-plugin-flowtype": "^3.2.1",
+    "eslint": "^5.13.0",
+    "eslint-plugin-flowtype": "^3.4.1",
     "eslint-plugin-react": "^7.12.4",
-    "flow-bin": "^0.91.0",
-    "flow-copy-source": "^2.0.2",
-    "jest": "^24.0.0",
+    "flow-bin": "^0.93.0",
+    "flow-copy-source": "^2.0.3",
+    "jest": "^24.1.0",
     "leaflet": "^1.4.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
     "react-leaflet": "^2.2.0"
   }
 }

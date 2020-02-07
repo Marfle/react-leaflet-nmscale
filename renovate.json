@@ -1,5 +1,9 @@
 {
-  "extends": ["config:base", ":preserveSemverRanges"],
+  "extends": [
+    "config:base",
+    ":preserveSemverRanges",
+    ":disablePeerDependencies"
+  ],
   "lockFileMaintenance": { "enabled": true },
   "rangeStrategy": "bump",
   "semanticCommitType": "chore",

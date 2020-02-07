@@ -6,6 +6,7 @@
   "packageRules": [
     {
       "updateTypes": ["minor", "patch", "lockFileMaintenance"],
+      "depTypeList": ["devDependencies", "dependencies"],
       "automerge": true
     }
   ]

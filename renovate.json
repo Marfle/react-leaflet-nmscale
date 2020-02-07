@@ -5,7 +5,7 @@
   "semanticCommitType": "chore",
   "packageRules": [
     {
-      "updateTypes": ["minor", "lockFileMaintenance"],
+      "updateTypes": ["minor", "patch", "lockFileMaintenance"],
       "automerge": true
     }
   ]

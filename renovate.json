@@ -1,0 +1,12 @@
+{
+  "extends": ["config:base", ":preserveSemverRanges"],
+  "lockFileMaintenance": { "enabled": true },
+  "rangeStrategy": "bump",
+  "semanticCommitType": "chore",
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "lockFileMaintenance"],
+      "automerge": true
+    }
+  ]
+}

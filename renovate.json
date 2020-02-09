@@ -2,11 +2,11 @@
   "extends": [
     "config:base",
     ":preserveSemverRanges",
-    ":disablePeerDependencies"
+    ":disablePeerDependencies",
+    ":semanticCommitTypeAll(chore)"
   ],
   "lockFileMaintenance": { "enabled": true },
   "rangeStrategy": "bump",
-  "semanticCommitType": "chore",
   "packageRules": [
     {
       "updateTypes": ["minor", "patch", "lockFileMaintenance"],

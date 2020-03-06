@@ -50,7 +50,7 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-plugin-flowtype": "^4.6.0",
-    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react": "^7.19.0",
     "flow-bin": "^0.120.1",
     "flow-copy-source": "^2.0.9",
     "jest": "^25.1.0",

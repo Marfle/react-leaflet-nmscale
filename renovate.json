@@ -9,8 +9,12 @@
   "rangeStrategy": "bump",
   "packageRules": [
     {
-      "updateTypes": ["minor", "patch", "lockFileMaintenance"],
+      "updateTypes": ["minor", "patch"],
       "depTypeList": ["devDependencies", "dependencies"],
+      "automerge": true
+    },
+    {
+      "updateTypes": ["lockFileMaintenance"],
       "automerge": true
     }
   ]

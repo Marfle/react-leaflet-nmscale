@@ -48,7 +48,7 @@
     "@babel/preset-flow": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.0.0",
+    "eslint": "^7.1.0",
     "eslint-plugin-flowtype": "^5.1.0",
     "eslint-plugin-react": "^7.20.0",
     "flow-bin": "^0.125.1",

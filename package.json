@@ -6,11 +6,9 @@
   "module": "dist/esm/nmscale.js",
   "scripts": {
     "clean": "rm -Rf dist/",
-    "build": "npm run build:cjs && npm run build:esm && npm run build:flow",
+    "build": "npm run build:cjs && npm run build:esm",
     "build:cjs": "BABEL_ENV=cjs babel src --out-dir dist",
     "build:esm": "BABEL_ENV=es babel src --out-dir dist/esm",
-    "build:flow": "flow-copy-source src dist && flow-copy-source src dist/esm",
-    "flow": "flow check",
     "jest": "jest",
     "lint": "eslint src __tests__",
     "test": "npm run lint && npm run jest",
@@ -38,25 +36,21 @@
     "dist/*"
   ],
   "peerDependencies": {
-    "react-leaflet": "^2.0.0"
+    "react-leaflet": "^3.0.0-beta"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.10.5",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
-    "@babel/preset-flow": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.5.0",
-    "eslint-plugin-flowtype": "^5.2.0",
     "eslint-plugin-react": "^7.20.3",
-    "flow-bin": "^0.129.0",
-    "flow-copy-source": "^2.0.9",
     "jest": "^26.1.0",
     "leaflet": "^1.6.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-leaflet": "^2.7.0"
+    "react-leaflet": "^3.0.0-beta"
   }
 }

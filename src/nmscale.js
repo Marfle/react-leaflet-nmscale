@@ -1,29 +1,16 @@
-// @flow
-import { MapControl, withLeaflet } from "react-leaflet";
-import LeafletNmScale from "./leafletnmscale";
+import LeafletNmScale from './leafletnmscale';
+import { createControlComponent } from '@react-leaflet/core';
 
-import type { MapControlProps } from "react-leaflet";
-
-type LeafletElement = LeafletNmScale;
-
-type Props = {
-  nautical?: boolean,
-  imperial?: boolean,
-  maxWidth?: number,
-  metric?: boolean,
-  updateWhenIdle?: boolean
-} & MapControlProps;
-
-class NmScale extends MapControl<LeafletElement, Props> {
-  static defaultProps = {
-    nautical: true,
-    metric: false,
-    imperial: false
-  };
-
-  createLeafletElement(props: Props): LeafletElement {
-    return new LeafletNmScale(props);
-  }
+function createNmScaleControl(props) {
+  const {
+    nautical = true,
+    imperial = false,
+    metric = false,
+    ...restProps
+  } = props;
+  return new LeafletNmScale({ nautical, imperial, metric, ...restProps });
 }
 
-export default withLeaflet(NmScale);
+const NmScale = createControlComponent(createNmScaleControl);
+
+export default NmScale;

@@ -1,29 +1,31 @@
 /* global describe, expect, it, jest */
 
-import React, { createRef } from "react";
-import { renderIntoDocument } from "react-dom/test-utils";
+import React from 'react';
+import { renderIntoDocument } from 'react-dom/test-utils';
 
-import { Map, TileLayer } from "react-leaflet";
+import { MapContainer, TileLayer } from 'react-leaflet';
 
-import NmScale from "../src/nmscale.js";
-import LeafletNmScale from "../src/leafletnmscale.js";
+import NmScale from '../src/nmscale';
+import LeafletNmScale from '../src/leafletnmscale';
 
-describe("NmScale", () => {
-  it("adds the scale to the map", () => {
-    const scaleRef = createRef();
-
-    const mock_updateNautical = jest.fn();
-    LeafletNmScale.prototype._updateNautical = mock_updateNautical;
-
-    renderIntoDocument(
-      <Map center={[0, 0]} zoom={10}>
-        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-        <NmScale ref={scaleRef} />
-      </Map>
+describe('NmScale', () => {
+  it('adds the scale to the map', (done) => {
+    const spy_updateNautical = jest.spyOn(
+      LeafletNmScale.prototype,
+      '_updateNautical'
     );
-    expect(mock_updateNautical.mock.calls.length).toBe(1);
-    expect(scaleRef.current.leafletElement.options.position).toEqual(
-      "bottomleft"
+    renderIntoDocument(
+      <MapContainer
+        center={[0, 0]}
+        zoom={10}
+        whenCreated={() => {
+          expect(spy_updateNautical).toHaveBeenCalledTimes(1);
+          done();
+        }}
+      >
+        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+        <NmScale />
+      </MapContainer>
     );
   });
 });

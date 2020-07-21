@@ -6,14 +6,13 @@
         "targets": {
           "ie": 11,
           "node": "current",
-          "browsers": ["last 2 versions"]
+          "browsers": ["last 2 major versions and not dead"]
         },
         "modules": false,
         "loose": true
       }
     ],
-    "@babel/react",
-    "@babel/flow"
+    "@babel/react"
   ],
   "plugins": ["@babel/plugin-proposal-class-properties"],
   "env": {

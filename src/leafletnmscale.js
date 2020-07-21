@@ -1,9 +1,7 @@
-// @flow
-// flowlint-next-line untyped-import:off
-import { Control, DomUtil } from "leaflet";
+import { Control, DomUtil } from 'leaflet';
 
-const LeafletScaleControl = Control.Scale.extend({
-  _addScales: function(options, className, container) {
+const NmScaleControl = Control.Scale.extend({
+  _addScales: function (options, className, container) {
     Control.Scale.prototype._addScales.call(
       this,
       options,
@@ -12,18 +10,18 @@ const LeafletScaleControl = Control.Scale.extend({
     );
 
     if (options.nautical) {
-      this._nScale = DomUtil.create("div", className, container);
+      this._nScale = DomUtil.create('div', className, container);
     }
   },
 
-  _updateScales: function(maxMeters) {
+  _updateScales: function (maxMeters) {
     Control.Scale.prototype._updateScales.call(this, maxMeters);
     if (this.options.nautical && maxMeters) {
       this._updateNautical(maxMeters);
     }
   },
 
-  _updateNautical: function(maxMeters) {
+  _updateNautical: function (maxMeters) {
     const maxNm = maxMeters / 1852;
 
     let nm;
@@ -34,10 +32,10 @@ const LeafletScaleControl = Control.Scale.extend({
     } else {
       nm = this._getRoundNum(maxNm);
     }
-    let label = nm + "nm";
+    let label = nm + 'nm';
 
     this._updateScale(this._nScale, label, nm / maxNm);
-  }
+  },
 });
 
-export default LeafletScaleControl;
+export default NmScaleControl;

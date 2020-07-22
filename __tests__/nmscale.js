@@ -1,5 +1,3 @@
-/* global describe, expect, it, jest */
-
 import React from 'react';
 import { renderIntoDocument } from 'react-dom/test-utils';
 
@@ -14,6 +12,7 @@ describe('NmScale', () => {
       LeafletNmScale.prototype,
       '_updateNautical'
     );
+
     renderIntoDocument(
       <MapContainer
         center={[0, 0]}

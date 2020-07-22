@@ -35,7 +35,7 @@ const NmScaleControl = Control.Scale.extend({
     let label = nm + 'nm';
 
     this._updateScale(this._nScale, label, nm / maxNm);
-  },
+  }
 });
 
 export default NmScaleControl;

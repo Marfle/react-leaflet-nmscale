@@ -51,7 +51,7 @@
     "eslint": "^7.5.0",
     "eslint-plugin-flowtype": "^5.2.0",
     "eslint-plugin-react": "^7.20.3",
-    "flow-bin": "^0.129.0",
+    "flow-bin": "^0.130.0",
     "flow-copy-source": "^2.0.9",
     "jest": "^26.1.0",
     "leaflet": "^1.6.0",

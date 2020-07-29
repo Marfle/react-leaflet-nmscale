@@ -36,8 +36,7 @@
     "dist/*"
   ],
   "peerDependencies": {
-    "react-leaflet": "^3.0.0-beta.2",
-    "@babel/runtime": "^7.10.5"
+    "react-leaflet": "^3.0.0-beta.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",

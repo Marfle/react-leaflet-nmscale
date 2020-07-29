@@ -8,11 +8,19 @@ const config = {
       '@babel/env',
       {
         targets: {
-          ie: 11,
-          node: 'current'
+          browsers: [
+            'chrome > 74',
+            'edge >= 18',
+            'firefox >= 68',
+            'ios >= 12',
+            'opera >= 58',
+            'safari >= 12',
+            'samsung >= 10'
+          ]
         },
         modules: false,
-        loose: true
+        loose: true,
+        debug: false
       }
     ],
     '@babel/react'

@@ -28,7 +28,7 @@ const config = {
   plugins: [
     [
       '@babel/transform-runtime',
-      { version: runtimeVersion, useESModules: ENV === 'test' ? false : true }
+      { version: runtimeVersion, useESModules: ['test', 'cjs'].some(s => s === ENV) ? false : true }
     ]
   ],
   env: {

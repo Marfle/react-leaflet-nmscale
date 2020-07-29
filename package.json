@@ -1,6 +1,6 @@
 {
   "name": "@marfle/react-leaflet-nmscale",
-  "version": "2.0.0-beta.1",
+  "version": "2.0.0-beta.2",
   "description": "Nautical mile scale for react-leaflet",
   "main": "dist/nmscale.js",
   "module": "dist/esm/nmscale.js",
@@ -36,7 +36,8 @@
     "dist/*"
   ],
   "peerDependencies": {
-    "react-leaflet": "^3.0.0-beta.2"
+    "react-leaflet": "^3.0.0-beta.2",
+    "@babel/runtime": "^7.10.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",

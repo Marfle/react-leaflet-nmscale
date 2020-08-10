@@ -1,6 +1,4 @@
 const ENV = process.env.BABEL_ENV || process.env.NODE_ENV || 'development';
-const pkg = require('./package.json');
-const runtimeVersion = pkg.dependencies['@babel/runtime'];
 
 const config = {
   presets: [
@@ -23,13 +21,8 @@ const config = {
         debug: false
       }
     ],
-    '@babel/react'
-  ],
-  plugins: [
-    [
-      '@babel/transform-runtime',
-      { version: runtimeVersion, useESModules: ['test', 'cjs'].some(s => s === ENV) ? false : true }
-    ]
+    '@babel/react',
+    '@babel/typescript'
   ],
   env: {
     cjs: {

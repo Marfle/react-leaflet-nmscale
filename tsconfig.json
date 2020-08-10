@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "declarationDir": "./dist/types",
+    "moduleResolution": "node",
+    "target": "ES2017"
+  },
+  "include": ["./src/**/*"]
+}

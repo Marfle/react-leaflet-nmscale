@@ -10,7 +10,7 @@ const config = {
         targets: {
           browsers: [
             'chrome > 74',
-            'edge >= 18',
+            'edge >= 81',
             'firefox >= 68',
             'ios >= 12',
             'opera >= 58',

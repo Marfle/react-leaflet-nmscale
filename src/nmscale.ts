@@ -6,7 +6,7 @@ interface NmScaleProps extends Control.ScaleOptions {
   nautical?: boolean;
 }
 
-function createNmScaleControl(props) {
+function createNmScaleControl(props: NmScaleProps) {
   const {
     nautical = true,
     imperial = false,

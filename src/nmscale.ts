@@ -18,8 +18,6 @@ function createNmScaleControl(props: NmScaleProps) {
   return new LeafletNmScale({ nautical, imperial, metric, ...restProps });
 }
 
-const NmScale = createControlComponent<LeafletNmScale, NmScaleProps>(
+export const NmScale = createControlComponent<LeafletNmScale, NmScaleProps>(
   createNmScaleControl
 );
-
-export default NmScale;

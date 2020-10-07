@@ -3,7 +3,7 @@ import { renderIntoDocument } from 'react-dom/test-utils';
 
 import { MapContainer, TileLayer } from 'react-leaflet';
 
-import NmScale from '../src/nmscale';
+import { NmScale } from '../src/nmscale';
 import LeafletNmScale from '../src/leafletnmscale';
 
 describe('NmScale', () => {

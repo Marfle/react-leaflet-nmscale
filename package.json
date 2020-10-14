@@ -55,8 +55,8 @@
     "flow-copy-source": "^2.0.9",
     "jest": "^26.5.3",
     "leaflet": "^1.7.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-leaflet": "^2.7.0"
   }
 }

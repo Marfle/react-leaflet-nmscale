@@ -57,6 +57,6 @@
     "leaflet": "^1.7.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-leaflet": "^2.7.0"
+    "react-leaflet": "^2.8.0"
   }
 }

@@ -9,7 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     env:
-      node-version: '12.x'
+      node-version: '14.x'
 
     steps:
     - name: checkout

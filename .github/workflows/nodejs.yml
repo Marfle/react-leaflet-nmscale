@@ -2,23 +2,28 @@ name: Node CI
 
 on: [push, pull_request]
 
+env:
+  CI: true
+
 jobs:
   test:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x]
+    env:
+      node-version: '14.x'
+
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: checkout
+      uses: actions/checkout@v2
+
+    - name: Use Node.js ${{ env.node-version }}
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: ${{ env.node-version }}
 
     - name: cache node modules
-      uses: actions/cache@v1
+      uses: actions/cache@v2
       env:
-        cache-name: cache-node-modules
+        cache-name: cache-node-modules-${{ env.node-version }}
       with:
         path: ~/.npm # npm cache files are stored in `~/.npm` on Linux/macOS
         key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
@@ -32,5 +37,3 @@ jobs:
         npm ci
         npm run build --if-present
         npm test
-      env:
-        CI: true

@@ -47,7 +47,7 @@
     "@babel/cli": "^7.12.1",
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
     "@babel/preset-typescript": "^7.12.1",
     "@types/jest": "^26.0.15",
     "@types/leaflet": "^1.5.19",

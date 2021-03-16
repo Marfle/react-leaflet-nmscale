@@ -5,17 +5,15 @@
     ":disablePeerDependencies",
     ":semanticCommitTypeAll(chore)"
   ],
-  "lockFileMaintenance": { "enabled": true },
+  "lockFileMaintenance": { "enabled": true, "automerge": true },
   "rangeStrategy": "bump",
   "packageRules": [
     {
       "updateTypes": ["minor", "patch"],
       "depTypeList": ["devDependencies", "dependencies"],
-      "automerge": true
-    },
-    {
-      "updateTypes": ["lockFileMaintenance"],
-      "automerge": true
+      "automerge": true,
+      "groupName": "patch/minor dependencies",
+      "schedule": ["every weekend"]
     }
   ]
 }

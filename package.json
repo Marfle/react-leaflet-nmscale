@@ -55,7 +55,7 @@
     "@types/react-dom": "^17.0.9",
     "@typescript-eslint/eslint-plugin": "^4.28.3",
     "@typescript-eslint/parser": "^4.28.3",
-    "eslint": "^7.30.0",
+    "eslint": "^7.31.0",
     "eslint-plugin-react": "^7.24.0",
     "jest": "^27.0.6",
     "leaflet": "^1.7.1",

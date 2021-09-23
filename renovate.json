@@ -17,7 +17,7 @@
       "matchDepTypes": ["devDependencies", "dependencies"],
       "automerge": true,
       "groupName": "patch/minor dependencies",
-      "schedule": ["schedule:monthly"]
+      "extends": ["schedule:monthly"]
     }
   ]
 }

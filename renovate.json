@@ -13,7 +13,7 @@
   },
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "lockFileMaintenance"],
+      "matchUpdateTypes": ["minor", "patch"],
       "matchDepTypes": ["devDependencies", "dependencies"],
       "automerge": true,
       "groupName": "patch/minor dependencies",

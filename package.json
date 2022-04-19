@@ -1,18 +1,18 @@
 {
   "name": "@marfle/react-leaflet-nmscale",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Nautical mile scale for react-leaflet",
-  "main": "dist/nmscale.js",
+  "main": "dist/esm/nmscale.js",
   "module": "dist/esm/nmscale.js",
   "sideEffects": false,
   "types": "dist/types/nmscale.d.ts",
+  "type": "module",
   "scripts": {
     "clean": "rm -Rf dist/",
-    "build": "npm run build:cjs && npm run build:esm && npm run build:types",
-    "build:cjs": "BABEL_ENV=cjs babel --extensions .tsx,.ts,.js src --out-dir dist",
+    "build": "npm run build:esm && npm run build:types",
     "build:esm": "BABEL_ENV=es babel --extensions .tsx,.ts,.js src --out-dir dist/esm",
     "build:types": "tsc --emitDeclarationOnly",
-    "jest": "jest",
+    "jest": "NODE_OPTIONS=--experimental-vm-modules jest",
     "lint": "eslint --ext .js --ext .ts --ext .tsx src __tests__",
     "test": "npm run lint && npm run jest && npm run test:types",
     "test:types": "tsc --noEmit",
@@ -41,7 +41,7 @@
     "dist/*"
   ],
   "peerDependencies": {
-    "react-leaflet": "^3.0.0 || ^4.0.0"
+    "react-leaflet": "^4.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.17.6",
@@ -49,7 +49,7 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
-    "@testing-library/react": "^12.1.5",
+    "@testing-library/react": "^13.1.1",
     "@types/jest": "^27.4.1",
     "@types/leaflet": "^1.7.9",
     "@types/react": "^18.0.5",
@@ -60,9 +60,9 @@
     "eslint-plugin-react": "^7.29.4",
     "jest": "^27.5.1",
     "leaflet": "^1.8.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-leaflet": "^3.2.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-leaflet": "^4.0.0",
     "typescript": "^4.6.3"
   }
 }

@@ -4,22 +4,8 @@ import { render } from '@testing-library/react';
 import { MapContainer, TileLayer } from 'react-leaflet';
 
 import { NmScale } from '../src/nmscale';
-import LeafletNmScale from '../src/leafletnmscale';
 
 describe('NmScale', () => {
-  let spy_updateNautical;
-
-  beforeEach(() => {
-    spy_updateNautical = jest.spyOn(
-      LeafletNmScale.prototype,
-      '_updateNautical'
-    );
-  });
-
-  afterEach(() => {
-    spy_updateNautical.mockRestore();
-  });
-
   it('adds the scale to the map', () => {
     const { container } = render(
       <MapContainer center={[0, 0]} zoom={10}>
@@ -30,8 +16,6 @@ describe('NmScale', () => {
 
     const scalediv = container.querySelector('.leaflet-control-scale');
     expect(scalediv).not.toBe(null);
-
-    expect(spy_updateNautical).toHaveBeenCalledTimes(1);
   });
 
   it('removes the scale when unmounted', () => {

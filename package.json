@@ -45,18 +45,18 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.23.4",
-    "@babel/core": "^7.23.5",
-    "@babel/preset-env": "^7.23.5",
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.7",
     "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
     "@testing-library/react": "^14.1.2",
-    "@types/jest": "^29.5.10",
+    "@types/jest": "^29.5.11",
     "@types/leaflet": "^1.9.8",
-    "@types/react": "^18.2.39",
-    "@types/react-dom": "^18.2.17",
-    "@typescript-eslint/eslint-plugin": "^6.13.1",
-    "@typescript-eslint/parser": "^6.13.1",
-    "eslint": "^8.54.0",
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.33.2",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
@@ -64,6 +64,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.1",
-    "typescript": "^5.3.2"
+    "typescript": "^5.3.3"
   }
 }

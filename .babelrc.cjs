@@ -1,5 +1,3 @@
-const ENV = process.env.BABEL_ENV || process.env.NODE_ENV || 'development';
-
 const config = {
   presets: [
     [

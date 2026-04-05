@@ -3,6 +3,7 @@
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "declaration": true,
+    "rootDir": "./src",
     "declarationDir": "./dist/types",
     "isolatedModules": true,
     "moduleResolution": "NodeNext",

@@ -14,7 +14,6 @@ const config = {
           ]
         },
         modules: false,
-        loose: true,
         bugfixes: true,
         debug: false
       }

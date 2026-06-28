@@ -55,8 +55,8 @@
     "@types/leaflet": "^1.9.21",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
-    "eslint": "^10.5.0",
-    "globals": "^17.6.0",
+    "eslint": "^10.6.0",
+    "globals": "^17.7.0",
     "jest": "^30.4.2",
     "jest-environment-jsdom": "^30.4.1",
     "leaflet": "^1.9.4",
@@ -64,6 +64,6 @@
     "react-dom": "^19.2.7",
     "react-leaflet": "^5.0.0",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.61.1"
+    "typescript-eslint": "^8.62.0"
   }
 }

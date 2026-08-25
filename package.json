@@ -12,9 +12,9 @@
     "build": "npm run build:esm && npm run build:types",
     "build:esm": "BABEL_ENV=es babel --extensions .tsx,.ts,.js src --out-dir dist/esm",
     "build:types": "tsc --emitDeclarationOnly",
-    "jest": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "vitest": "vitest run",
     "lint": "eslint",
-    "test": "npm run lint && npm run jest && npm run test:types",
+    "test": "npm run lint && npm run vitest && npm run test:types",
     "test:types": "tsc --noEmit",
     "prepublishOnly": "npm run clean && npm run test && npm run build"
   },
@@ -54,16 +54,17 @@
     "@types/jest": "^30.0.0",
     "@types/leaflet": "^1.9.22",
     "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.4",
-    "eslint": "^10.8.0",
-    "globals": "^17.8.0",
-    "jest": "^30.4.2",
-    "jest-environment-jsdom": "^30.4.1",
+    "@types/react-dom": "^19.2.5",
+    "@vitejs/plugin-react": "^6.1.0",
+    "eslint": "^10.9.1",
+    "globals": "^17.11.0",
+    "jsdom": "^30.0.1",
     "leaflet": "^1.9.4",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-leaflet": "^5.0.0",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.65.0"
+    "typescript-eslint": "^8.68.0",
+    "vitest": "^4.1.11"
   }
 }

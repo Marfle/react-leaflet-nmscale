@@ -6,14 +6,6 @@ const config = [
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
-    files: ['__tests__/**'],
-    languageOptions: {
-      globals: {
-        ...globals.jest
-      }
-    }
-  },
-  {
     files: ['**/*.cjs'],
     languageOptions: {
       globals: {

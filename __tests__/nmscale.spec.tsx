@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { describe, expect, it } from 'vitest';
 import { render } from '@testing-library/react';
 
 import { MapContainer, TileLayer } from 'react-leaflet';

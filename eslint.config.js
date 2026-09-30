@@ -1,18 +1,10 @@
+import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 import js from '@eslint/js';
-import globals from 'globals';
 
-const config = [
+const config = defineConfig([
   js.configs.recommended,
-  ...tseslint.configs.recommended,
-  {
-    files: ['**/*.cjs'],
-    languageOptions: {
-      globals: {
-        ...globals.node
-      }
-    }
-  }
-];
+  ...tseslint.configs.recommended
+]);
 
 export default config;

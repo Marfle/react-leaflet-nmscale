@@ -1,5 +1,4 @@
-/* eslint @typescript-eslint/ban-ts-comment: "warn" */
-// @ts-ignore
+// @ts-expect-error no types
 import LeafletNmScale from './leafletnmscale.js';
 import { createControlComponent } from '@react-leaflet/core';
 import type { Control } from 'leaflet';

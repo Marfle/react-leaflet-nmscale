@@ -64,7 +64,7 @@
     "react-dom": "^19.3.0",
     "react-leaflet": "^5.0.0",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.70.1",
+    "typescript-eslint": "^8.71.0",
     "vitest": "^5.0.2"
   }
 }

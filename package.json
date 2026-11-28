@@ -44,19 +44,19 @@
     "react-leaflet": "^4.0.0 || ^5.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^8.1.0",
-    "@babel/core": "^8.1.2",
-    "@babel/preset-env": "^8.0.7",
+    "@babel/cli": "^8.1.4",
+    "@babel/core": "^8.1.4",
+    "@babel/preset-env": "^8.1.4",
     "@babel/preset-react": "^8.0.1",
     "@babel/preset-typescript": "^8.0.7",
     "@eslint/js": "^10.0.1",
     "@testing-library/react": "^16.3.3",
     "@types/jest": "^30.0.0",
-    "@types/leaflet": "^1.9.22",
-    "@types/react": "^19.3.0",
+    "@types/leaflet": "^1.9.23",
+    "@types/react": "^19.3.3",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.3.0",
-    "eslint": "^10.15.0",
+    "eslint": "^10.16.0",
     "globals": "^17.14.0",
     "jsdom": "^31.0.1",
     "leaflet": "^1.9.4",
@@ -64,7 +64,7 @@
     "react-dom": "^19.3.1",
     "react-leaflet": "^5.0.0",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.73.0",
-    "vitest": "^5.1.1"
+    "typescript-eslint": "^8.74.0",
+    "vitest": "^5.1.2"
   }
 }
